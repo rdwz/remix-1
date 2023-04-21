@@ -17,9 +17,6 @@ ${colors.logoBlue("R")} ${colors.logoGreen("E")} ${colors.logoYellow(
 )} ${colors.logoPink("I")} ${colors.logoRed("X")}
 
   ${colors.heading("Usage")}:
-    $ remix create <${colors.arg("projectDir")}> --template <${colors.arg(
-  "template"
-)}>
     $ remix init [${colors.arg("projectDir")}]
     $ remix build [${colors.arg("projectDir")}]
     $ remix dev [${colors.arg("projectDir")}]
@@ -54,27 +51,6 @@ ${colors.logoBlue("R")} ${colors.logoGreen("E")} ${colors.logoYellow(
     - ${colors.arg("projectDir")}        The Remix project directory
     - ${colors.arg("template")}          The project template to use
     - ${colors.arg("remixPlatform")}     \`node\` or \`cloudflare\`
-
-  ${colors.heading("Creating a new project")}:
-
-    Remix projects are created from templates. A template can be:
-
-    - a file path to a directory of files
-    - a file path to a tarball
-    - the name of a :username/:repo on GitHub
-    - the URL of a tarball
-
-    $ remix create my-app --template /path/to/remix-template
-    $ remix create my-app --template /path/to/remix-template.tar.gz
-    $ remix create my-app --template remix-run/grunge-stack
-    $ remix create my-app --template :username/:repo
-    $ remix create my-app --template https://github.com/:username/:repo
-    $ remix create my-app --template https://github.com/:username/:repo/tree/:branch
-    $ remix create my-app --template https://github.com/:username/:repo/archive/refs/tags/:tag.tar.gz
-    $ remix create my-app --template https://example.com/remix-template.tar.gz
-
-    To create a new project from a template in a private GitHub repo,
-    pass the \`token\` flag with a personal access token with access to that repo.
 
   ${colors.heading("Initialize a project:")}:
 
